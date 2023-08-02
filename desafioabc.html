@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript - Alterando valores de variáveis</title>
+
+
+
+</head>
+<body>
+
+  <h1>Alterando valores de variáveis</h1>
+
+  <script>
+
+    var a = 10
+    var b = 20
+    var c = null //variável auxiliar utilizada na lógica
+
+    document.write('A: ' + a + "<br>")
+    document.write('B: ' + b + '<br>')
+    document.write('C: ' + b + '<br>')
+
+    document.write("<hr>")
+    //lógica de inversão dos valores das variáveis A e B
+  
+    c = a //utilizada a variável C para armazenar temporariamente o valor da variável A
+     
+    a = b
+    b = c
+    c = null
+
+    document.write('A: ' + a + "<br>")
+    document.write('B: ' + b + '<br>')
+    document.write('C: ' + b + '<br>')
+
+  </script>
+
+
+</body>
+</html>
+
