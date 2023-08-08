@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+  <h1>Operadores lógicos</h1>
+ <div>
+  E  -->   (&&)- verdadeiro se todos forem verdades <br>
+  ou   -->  (||) - verdadeiro se ao menos uma for verdade <br>
+  negação --> (!) - inverte o resultado da expressão de comparação
+ </div>
+<hr>
+ <script>
+  //true && true = true  operador (E)
+/*
+  if (2 == 2 && 3 >=3 && 'a' == 'b') {
+    document.write('Verdadeiro')
+  }else {
+    document.write('Falso')
+  }
+*/
+
+
+  //operador || (0u )se todas as expressoes forem falso sera False
+ /* if (2 == 2 || 3 >=3 || 'a' == 'b') {
+    document.write('Verdadeiro')
+  }else {
+    document.write('Falso')
+  }*/
+
+//falso = false
+ /* if (!(5>=2)) {
+    document.write('Verdadeiro')
+  }else {
+    document.write('Falso')
+  }*/
+
+   //variaveis preechidas pelo usuario
+    var nota = prompt('Digite a nota do aluno')
+    var faltas = prompt('Digite a quantidade de faltas')
+
+   //variaveis de parâmetros
+    var media = 7
+    var faltas_maximas = 15
+
+    if (nota >= media && faltas <= faltas_maximas) {
+      document.write('Aprovado')
+    } else {
+      document.write ('Reprovado')
+    }
+
+
+ </script>
+
+
+  
+</body>
+</html>
