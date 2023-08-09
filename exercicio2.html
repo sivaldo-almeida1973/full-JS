@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <h1>Exercício 2</h1>
+
+  <script>
+
+ var nome = prompt('Digite seu nome:')
+ var altura = prompt('Informe sua altura em centimetros:')
+ var peso = prompt('Informe seu peso')
+
+
+ 
+ var altura = parseFloat(altura) 
+ var peso = parseFloat(peso)
+
+ altura = altura / 100
+
+ var massa_corporal = peso / ( altura * altura )
+ var classificacao = ''
+
+ if(massa_corporal < 16){
+  document.write(classificacao ='Baixo peso muito grave <br/>')
+ } else if(massa_corporal >= 16 && massa_corporal <= 16.99){
+  document.write(classificacao ='Baixo peso grave <br/>')
+ }else if(massa_corporal >= 17 && massa_corporal <= 18.49){
+  document.write(classificacao ='Baixo peso <br/>')
+ }else if(massa_corporal >= 18.50 && massa_corporal <= 24.99){
+  document.write(classificacao ='peso normal <br/>')
+ }else if(massa_corporal >= 25 && massa_corporal <= 29.99){
+  document.write(classificacao ='sobrepeso <br/>')
+  
+ }else if(massa_corporal >= 30 && massa_corporal <= 34.99){
+  document.write(classificacao ='Obesidade 1 <br/>')
+ }else if(massa_corporal >= 35 && massa_corporal <= 39.99){
+  document.write(classificacao ='Obesidade grau 2 <br/>')
+ }else if(massa_corporal > 40 ){
+  document.write(classificacao ='Obesidade grau 3 <br/>')
+ }
+  document.write(nome + ' possui indice de massa corporal igual a:' + massa_corporal + ' sendo classificado como: '+ classificacao )
+
+
+  </script>
+  
+</body>
+</html>
