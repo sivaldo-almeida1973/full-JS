@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <h1>Escopo de Variaveis</h1>
+
+ 
+
+  <script>
+    // Js possui e escopos: global , funçao e do bloco 
+
+
+    //escopo de função global========================================
+    var serie = ' Friends '
+ 
+      //escopo de função em (bloco)========================================
+      // tem acesso as variaveis no escopo de função (global)
+    if (true) {
+      var serie2 = "Game of Trones" //variavel declarada dentro do ecopo de bloco sofre elevação para o escopo global(roster)
+      document.write(serie)
+    }
+    document.write(serie2)
+
+
+    document.write('<br/>') // quebra de linha
+   // escopo da funçao
+   
+    function x (){
+      var serie3 = ' The Walking Dead '//variavel declarada dentro do escopo da funçao não tera elevação para o escopo global, fica restrito dentro da funçao
+      document.write(serie) 
+      document.write(serie2)// funçao tambem tem acesso a variavel de escopo global
+    }
+    //chamando a função
+     x()
+
+
+
+     //atençao :escopo de funçãoe  de bloco visualizao variavel declarada dentro do escopo global
+    
+    //variavel declarada dentro do ecopo de bloco sofre elevação para o escopo global(roster)
+
+    //variavel declarada dentro do escopo da funçao não tera elevação para o escopo global, fica restrito dentro da funçao
+
+  </script>
+  
+</body>
+</html>
