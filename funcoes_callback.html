@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  
+
+
+  <script>
+//criamos a função exibir artigo
+    function exibirArtigo(id, callbackSucesso, callbackErro){
+      //lógica: recuperar o id via requisição http
+        //como é true ira imprimir a callbackSucesso
+      if (true) {
+        callbackSucesso('Funçoes de callback em JS','funções de callback são muito utilizadas .....' )
+      }else{
+        callbackErro('Erro ao recuperar os dados')
+      }
+    }
+
+    
+    //como é true ira imprimir a callbackSucesso
+
+    var callbackSucesso = function(titulo, descricao){
+      document.write('<h1>' + titulo + '</h1>') 
+      document.write('<hr/>')
+      document.write('<p>' + descricao + '</P>')
+
+    }
+    
+//se fosse false iria imprimir  callbackErro
+    var callbackErro = function(erro){
+      document.write('<p><b> Erro: </b>' + erro + '</p>')
+
+    }
+    //chamara a funcão exibirArtigo
+    exibirArtigo(1, callbackSucesso, callbackErro)
+
+   
+   
+  </script>
+  
+</body>
+</html>
