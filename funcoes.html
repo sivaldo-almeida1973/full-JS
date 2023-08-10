@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <h1>Funcoes JS</h1>
+
+  <script>
+    //encapsulamento
+    //void  tipo não retorna=================================================
+
+    //function calcularAreaTerreno(largura, comprimento){
+    //lógica
+     // var area = largura * comprimento 
+     // document.write('O terreno posui ' + area + ' metros quadrados')
+     
+    // }
+    // calcularAreaTerreno(10, 25)
+
+
+    //retorno tipo return ==========================================
+    
+     // function calcularAreaTerreno(largura, comprimento){
+    //lógica
+      //var area = largura * comprimento
+     
+     // return area
+     
+     //}
+     //pode ser dessa forma
+     //var area = calcularAreaTerreno(10, 25)
+    // document.write('O terreno possui ' + area + ' metros quadrados')
+
+
+     //pode ser dessa forma 
+    //document.write('O terreno possui ' + calcularAreaTerreno(10, 25)+ ' metros quadrados')
+     
+
+    // pode ser feito pedido para o usuario digitar as medidas===========================
+    /*
+    function calcularAreaTerreno (largura, comprimento) {
+      //logica
+      var area = largura * comprimento
+
+      return area
+    }
+
+    var largura = prompt('Digite a latgura do terreno:  ')
+    var comprimento = prompt('Digite o comprimento do terreno: ')
+
+    var area = calcularAreaTerreno(largura, comprimento)
+
+    document.write('O terreno possui ' + area + ' meros quadrados')
+   */
+   
+
+   //a função pode vir depois  de declarar as variaveis sem problemas
+    var largura = prompt('Digite a latgura do terreno:  ')
+    var comprimento = prompt('Digite o comprimento do terreno: ')
+
+    var area = calcularAreaTerreno(largura, comprimento)
+
+    document.write('O terreno possui ' + area + ' metros quadrados')
+
+
+    function calcularAreaTerreno (largura, comprimento) {
+      //logica
+      var area = largura * comprimento
+
+      return area
+    }
+
+
+  </script>
+  
+</body>
+</html>
