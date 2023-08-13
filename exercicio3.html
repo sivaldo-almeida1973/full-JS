@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+
+</head>
+<body>
+
+  <script>
+
+  //solicitar entradas no prompt
+  var num1 = prompt('Digite um numero:')
+  var operacao = prompt('Digite a operação:')
+  var num2 = prompt('Digite outro numero:')
+
+  //criar a função calcular
+  function calcular(num1,num2, operacao){
+
+    //coverter para de string para float
+    num1 = parseFloat(num1)
+    num2 = parseFloat(num2)
+
+
+   //criar variavle resultado
+    var resultado = 0
+   
+
+    //condicionais
+    if(operacao == '+'){
+      resultado = num1 + num2
+    }
+    if (operacao == '-'){
+      resultado = num1 - num2
+    
+    }   
+    return resultado
+
+  }//fim da função calcular
+
+
+  //iprimir resultado 
+  document.write('O resultado é :' + calcular(num1, num2, operacao) )
+
+ 
+
+
+
+  </script>
+  
+</body>
+</html>
