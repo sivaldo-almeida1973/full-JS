@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <script>
+
+   
+    //calculo com datas
+    //11/08/2023
+    var data1 = new Date(2023, 08, 11 )
+
+    //18/09/2023
+
+    var data2 = new Date(2023, 09, 18)
+
+    //traz a represnetação textual da data (toSting)
+    document.write(data1.toString())
+    document.write('<hr>')
+    document.write(data2.toString())
+
+    document.write('<hr> <br>')
+
+    //converter datas para algo que podemos calcular
+    
+
+    document.write(data1.getTime())
+    document.write('<hr>')
+    document.write(data2.getTime())
+
+    document.write('<hr> <br> <br>')
+
+    // 1 de janeiro de 1970
+    //encontrar a qtde de milissegundos entre a data1 e data2
+    //Math.abs tranfoema numero negativo em positivo
+
+    var milissecundos_entre_datas = Math.abs(data1.getTime() - data2.getTime())
+    document.write(milissecundos_entre_datas, '<br> <hr>')
+
+    // tranformar milissecundos em dias
+
+    // 1 dia tem 24 horass, cada hora 60 minutos,
+    //cada minuto tem 60 segundos e
+    //cada segundo tem 1000 milissegundos
+    // quantos milissegundos existem em 1 dia
+
+    var milissecundos_por_dia = (1*24*60*60*1000)
+
+    document.write('1 dia tem :' + milissecundos_por_dia + ' milissegundos')
+
+    document.write('<br> <hr>')
+    document.write('A diferença entre data1 e data2 é:' + milissecundos_entre_datas / milissecundos_por_dia + 'dia(s)')
+
+
+
+
+
+  
+
+
+
+
+   
+
+
+    
+
+
+  
+  </script>
+  
+</body>
+</html>
