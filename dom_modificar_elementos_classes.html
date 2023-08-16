@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+
+<style>
+
+  /*criar o estilo do elemento desejavel*/
+  .estilo1 {
+    background-color: red;
+    color: #fff;
+
+
+
+  }
+
+   /*criar o estilo pra modificar o elemento desejavel*/
+  .estilo2 {
+    width: 400px;
+    height: 100px;
+    color: aqua;
+    background-color: burlywood;
+    font-size: 25px;
+    text-align: center;
+    padding: 25px;
+
+  }
+
+</style>
+ 
+
+</head>
+<body >
+  
+<div id="mensagem" class="estilo1">Modificando a classe do elemento</div>
+<!--criar id='mensagem' dentro da div e ligar na função Js-->
+
+<hr>
+
+<button  type="button"  onclick="modificaClasse()">Aplicar classe</button>
+<!--criar funcao modificaClasse dentro do button e ligar na função Js-->
+
+
+
+<!--criar funcao modificaClasse  e ligar na função do button onclick-->
+<script>
+  function modificaClasse() {
+    document.getElementById('mensagem').className = 'estilo2'
+
+  }
+</script>
+  
+        
+
+
+
+</body>
+</html>
