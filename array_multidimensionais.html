@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <script>
+    //mais de uma lista dentro de um array
+
+    var lista_coisas = Array()
+
+    lista_coisas['frutas'] = Array('banana', 'uva', 'manga', 'morango')
+
+
+
+    //essas duas maneira abaixo terão o mesmo resultado
+
+    /*lista_coisas['pessoas'] = Array('Alice', 'lucas', 'sivaldo', 'Maria')*/
+    
+    lista_coisas['pessoas'] = []
+    lista_coisas['pessoas']['a'] = 'Alice'
+    lista_coisas['pessoas']['b'] = 'Lucas'
+    lista_coisas['pessoas']['c'] = 'Sivaldo'
+
+/*
+    lista_coisas['frutas'][1] = 'banana'
+    lista_coisas['frutas'][2] = 'manga'
+    lista_coisas['frutas'][3] = 'uva'
+    lista_coisas['frutas'][4] = 'abacate'
+*/
+    document.write(lista_coisas['frutas'][3], '<br>')
+    document.write(lista_coisas['frutas'][2], '<br>')
+    document.write(lista_coisas['pessoas']['c'])//quando indice for string usar aspas
+
+    //imprimir da lista frutas o indice 3 (morango)
+
+
+  
+
+  </script>
+
+ 
+  
+</body>
+</html>
