@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript</title>
+</head>
+<body>
+
+  <script>
+
+    var lista_frutas = Array()
+
+    lista_frutas[0] = 'banana'
+    lista_frutas[1] = 'maçã'
+    lista_frutas[2] = 'morango'
+    lista_frutas[3] = 'uva'
+    lista_frutas[4] = 'abacate'
+
+   //a pesquisa é case sensitive ( o elemento tem que esta escrito igualmente o pesquisado) EX: maiusculas e minusculas
+    //pesquisa pra saber es elemento existe no array
+    //console.log(lista_frutas.indexOf('morango'))
+    //document.write(lista_frutas.indexOf('uva'))
+
+    if(lista_frutas.indexOf('abacaxi') === -1) {
+      console.log('Elemento não existe')
+    }else {
+      console.log('Elemento existe e está na posição' + lista_frutas.indexOf('abacaxi'))
+    }
+
+    if(lista_frutas.indexOf('abacate') === -1) {
+      console.log('Elemento não existe')
+    }else {
+      console.log('Elemento existe e está na posição ' + lista_frutas.indexOf('abacate'))
+    }
+    
+  </script>
+
+ 
+  
+</body>
+</html>
