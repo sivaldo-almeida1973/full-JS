@@ -7,14 +7,45 @@
 
   <link rel="stylesheet" href="estyle.css">
 
+  <script src="jogo.js"></script>
+
 </head>
 <body onresize="ajustaTamanhoPalcoJogo()">
+
+  <div class="painel">
+
+    <div class="vidas">
+      <img id="v1" src="imagens/coracao_cheio.png" alt="">
+      <img id="v2" src="imagens/coracao_cheio.png" alt="">
+      <img id="v3" src="imagens/coracao_cheio.png" alt="">
+
+
+    </div>
+
+    <div class="cronometro">
+      tempo restante: <span id="cronometro"></span>
+    </div>
+
+  </div>
 
   
 
 
 
+  <script>
 
-  <script src="jogo.js"></script>
+    document.getElementById('cronometro').innerHTML = tempo
+
+    //criar um novo mosquito a cada 1 segundo
+    var criaMosquito = setInterval(function() {
+        posicaoRandomica()
+    }, 2000)
+
+
+  </script>
+
+
+ 
+
 </body>
 </html>
