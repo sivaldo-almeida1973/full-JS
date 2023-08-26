@@ -23,11 +23,11 @@ if(nivel === 'normal') {
     criarMosquitoTempo = 750
 }
 
-
+//controla tamanho da tela ******************
 
 function ajustaTamanhoPalcoJogo() {
-     altura = window.innerHeight
-     largura = window.innerWidth
+    altura = window.innerHeight
+    largura = window.innerWidth
 
     console.log(altura, largura)
 
@@ -71,8 +71,8 @@ function posicaoRandomica() {
     //ajustar posicão do mosquito
     //math.floor ira arredondar para baixo os numeros altura e largura
 
-    var posicaoX = Math.floor(Math.random() * largura) - 90
-    var posicaoY = Math.floor(Math.random() * altura) - 90
+    var posicaoX = Math.floor(Math.random() * largura) - 150
+    var posicaoY = Math.floor(Math.random() * altura) - 150
 
     posicaoX = posicaoX < 0 ? 0 : posicaoX
     posicaoY = posicaoY < 0 ? 0 : posicaoY
@@ -98,6 +98,7 @@ function posicaoRandomica() {
     //incluir nossa img dentro do body atraves do metodo appendChild
     document.body.appendChild(mosquito)
 
+    
 }
 
 
